@@ -1,13 +1,88 @@
-body {
+body {    #styling whole page
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: white;
   color: black;
 }
-header {
-  background-color: pink; 
+header {   
+  background-color:  rgb(29, 90, 212); 
   color: white;
   padding: 20px;
   text-align: center;
+}
+nav ul {
+  list-style-type: none; #removing bullet points
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+section {
+  padding: 40px;
+  background-color: white;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid: white;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid black; 
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: rgb(29, 90, 212);
+  color: white;
+}
+
+
+form {
+  margin-top: 20px;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+}
+
+button {
+  background-color:  rgb(29, 90, 212);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:  rgb(29, 90, 212);
+}
+footer {
+  background-color: rgb(29, 90, 212);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+footer a {
+  color: yellow; 
+  text-decoration: none;
 }
