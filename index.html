@@ -14,6 +14,7 @@
        <ul>
         <li><a href="#about">About Me</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -49,16 +50,49 @@
           </tr>
         </tbody>
       </table>
+    </section>
 
-  <section class="card">
+  <section id="projects" class="card">
     <h2>Projects</h2>
-    <img src="project.jpg" alt="My project">
-  </section>
-</main>
+    <div class="flex-item">
+      <h3>Food Delivery MERN App</h3>
+      <p>
+        Built a food delivery web application using MERN stack with browsing, authentication,
+        and real-time order tracking. Integrated Stripe for secure payments and JWT for user authentication.
+        Deployed frontend on Vercel and backend on Render.
+      </p>
+      <p>
+        <a href="https://github.com/trishadaggupati25/Food-Delivery-mern-app" target="_blank">
+          View on GitHub
+        </a>
+      </p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="flex-item">
+      <h3>Birthday Wisher</h3>
+      <p>
+        Created a React-based birthday countdown site using JavaScript, HTML, and CSS. Enabled users to generate
+        shareable countdown links with personalized names and dates. Deployed on Netlify.
+      </p>
+      <p>
+        <a href="https://github.com/trishadaggupati25/Birthday-Wisherr" target="_blank">
+          View on GitHub
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
 
 
     <footer id="contact">
     <p>Contact me at: <a href="mailto:trishadaggupati@gmail.com">trishadaggupati@gmail.com</a></p>
+
+    <p>
+        <a href="resume.pdf" download>
+          <button type="button">📄 Download My Resume (PDF)</button>
+        </a>
+    </p>
     <form action="mailto:trisha@example.com" method="post" enctype="text/plain">
       <label for="name">Name:</label><br>
       <input type="text" id="name" name="name" required><br><br>
@@ -76,5 +110,6 @@
       <a href="mailto:daggupati@gmail.com">daggupati@gmail.com</a>
     </p>
   </footer>
+ </div>
 </body>
 </html>

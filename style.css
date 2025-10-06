@@ -143,3 +143,36 @@ section li {
   margin: 0 auto; /* center container */
   padding: 20px;
 }
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* space between items */
+  flex-wrap: wrap; /* allow wrapping on small screens */
+  justify-content: space-between; /* space out items */
+  align-items: center; /* vertically align items */
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* space between stacked items */
+  align-items: flex-start; /* left-align items */
+}
+.flex-item {
+  flex: 1; /* make items grow evenly */
+  min-width: 250px; /* prevent them from becoming too small */
+  padding: 20px;
+  background-color: rgb(253, 253, 255);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .flex-item {
+    min-width: 100%; /* stack items on mobile */
+  }
+}
